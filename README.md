@@ -4,11 +4,30 @@
 
 # Présentation TouchDesigner
 
+Logiciel de création visuele
+
 # Entrées et sorties
+
+Entrées :
+- Son
+- Controleur MIDI
+- OSC (Augmenta)
+- ainsi de suite
+
+Sorties :
+- Vidéo-mapping
+- Led-mapping
 
 # Ce que je fais
 
+<img src="images/Enregistrement de l’écran 2022-09-12 à 17.01.41.gif" width="488"/>
+
+<img src="images/Enregistrement de l’écran 2022-09-15 à 13.33.10.gif" width="488"/>
+
+<img src="images/Enregistrement de l’écran 2022-09-23 à 12.28.49.gif" width="488"/>
+
 # Les gens qui font des trucs
+
 Borischimp504 - photogrammétrie
 
 <img src="images/Borischimp504.gif" width="488"/>
