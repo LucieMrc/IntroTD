@@ -7,12 +7,14 @@ Lucie Mrc
 
 Logiciel de création visuelle générative en temps réelle, basé sur un language de programmation nodale.
 
+Mapping, Vjing, interaction spectacteur/son/environement-visuels
+
 ## Entrées et sorties
 
 Entrées :
 - Son
 - Controleur MIDI
-- OSC (Augmenta)
+- OSC (Augmenta, Arduino)
 - ainsi de suite
 
 Sorties :
