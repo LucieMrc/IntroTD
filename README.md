@@ -11,11 +11,19 @@
 # Les gens qui font des trucs
 Borischimp504 - photogrammétrie
 
-![gif](.prezTD/Borischimp504.gif)
+![gif](.images/Borischimp504.gif)
 
 B2bk - photogrammétrie
+
+![gif](.images/b2bk.gif)
+
 Kaoru Tanaka - Visuels génératifs
+
+![gif](.images/kaoru.gif)
+
 Roelof Knol - installations interactives
+
+![gif](.images/roefnol.gif)
 
 # Les gens qui font des tutos
 [Bileam Tschepe](https://www.youtube.com/channel/UCONptu0J1PCrW9YfBtSdqjA)
