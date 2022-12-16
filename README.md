@@ -1,28 +1,30 @@
-# IntroTD_Stereolux
+# IntroTD
 
-## Intro
-Lucie Mrc
+## TouchDesigner ???
 
-## Présentation TouchDesigner
+Touchdesigner is a visual programmation langage used to create multimedia interactive content in real time. It is mostly used by artists and programmers to create artwork, performances and installations.
 
-Logiciel de création visuelle générative en temps réelle, basé sur un language de programmation nodale.
+Touchdesigner allow 2D and 3D production, including rendering and composing tools, video and audio inputs and outputs, multi-screens support, video mapping, animation, 3D engine, and programmation tools.
 
-Mapping, Vjing, interaction spectacteur/son/environement-visuels
+Programming in TD is based on the connexion between different nodes, which all have parameters controling their operations.
 
-## Entrées et sorties
+Uses : mapping, VJing, interaction spectacteur/son/environement-visuels
 
-Entrées :
-- Son
-- Controleur MIDI
+## Inputs and outputs
+
+Inputs :
+- Sound
+- MIDI controler
 - OSC (Augmenta, Arduino)
-- ainsi de suite
+- etc
 
-Sorties :
-- Vidéo-mapping
+Outputs :
+- Video-mapping
 - Led-mapping
-- Données ainsi de suite et tout
+- datas
+- etc
 
-## Ce que je fais
+## What *I* do
 
 <img src="images/Enregistrement de l’écran 2022-09-12 à 17.01.41.gif" width="488"/>
 
@@ -32,25 +34,25 @@ Sorties :
 
 [@lucie.mrc](https://www.instagram.com/luciemrc/)
 
-## Les gens qui font des trucs
+## People doing things
 
-[Borischimp504](https://www.instagram.com/borischimp504/) - photogrammétrie
+[Borischimp504](https://www.instagram.com/borischimp504/) - photogrammetry
 
 <img src="images/Borischimp504.gif" width="488"/>
 
-[B2bk](https://www.instagram.com/b2bk.fr/) - photogrammétrie
+[B2bk](https://www.instagram.com/b2bk.fr/) - photogrammetry
 
 <img src="images/b2bk.gif" width="488"/>
 
-[Kaoru Tanaka](https://www.instagram.com/velvet_kaoru/) - Visuels génératifs
+[Kaoru Tanaka](https://www.instagram.com/velvet_kaoru/) - generative visuals
 
 <img src="images/kaoru.gif" width="488"/>
 
-[Roelof Knol](https://www.instagram.com/roelofknol/) - installations interactives
+[Roelof Knol](https://www.instagram.com/roelofknol/) - interactive installations
 
 <img src="images/roefnol.gif" width="488"/>
 
-## Les gens qui font des tutos
+## People doing youtube tutorials
 
 [Bileam Tschepe](https://www.youtube.com/channel/UCONptu0J1PCrW9YfBtSdqjA)
 
@@ -65,4 +67,19 @@ Sorties :
 [Pakita12](https://www.youtube.com/@paketa12)
 
 
+# Understanding TouchDesigner
+
+## Nodes
+
+6 categories of nodes :
+- COMP (Components), representing different types of controls and various nodes.
+- TOP (Texture Operators), allowing operations on 2D images.
+- CHOP (Channel Operators), used for animations and audio.
+- SOP (Surface Operators), native 3D objects of TD, handling 3D points, polygones, and other 3D primitives.
+- MAT (Materials), used to apply materials and shaders on 3D renders.
+- DAT (Data Operators), used for texts, scripts and data arrays.
+
+Each categories have a color, and you cannot connect nodes from different categories. To connect a CHOP to a TOP in your network for example, you can either use a CHOPToTop node or link the parameter you want in the CHOP to a parameter in the TOP. The link will then be a dotted line instead of a full line.
+
+Each node can be customized with a multitude of parameters particular to each, and allow the link of parameters between differents nodes, and to get data from any part of the TD project.
 
