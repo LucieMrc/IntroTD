@@ -13,18 +13,17 @@ Uses : mapping, VJing, interaction spectacteur/son/environement-visuels
 ## Inputs and outputs
 
 Inputs :
-- Sound
+- dound
 - MIDI controler
-- OSC (Augmenta, Arduino)
+- OSC (from Augmenta, Arduino)
 - etc
 
 Outputs :
-- Video-mapping
-- Led-mapping
+- real-time video (video-mapping, led-mapping, ...)
 - datas
 - etc
 
-## What *I* do
+## What I do
 
 <img src="images/Enregistrement de l’écran 2022-09-12 à 17.01.41.gif" width="488"/>
 
@@ -52,6 +51,17 @@ Outputs :
 
 <img src="images/roefnol.gif" width="488"/>
 
+[No One's Image](https://www.instagram.com/noonesimg/) - generative visuals
+
+<img src="images/noonesimg.gif" width="488"/>
+
+[Karlskene](https://www.instagram.com/karlskene/) - generative visuals with laser and projection
+
+<img src="images/karlskene.gif" width="488"/>
+
+[Simon Alexander-Adams](https://www.instagram.com/polyhop/) - generative visuals
+
+<img src="images/simonaa.gif" width="488"/>
 
 
 ## People doing youtube tutorials
