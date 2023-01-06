@@ -1,4 +1,4 @@
-# IntroTD
+# Intro_TD
 
 ## TouchDesigner ???
 
@@ -13,8 +13,8 @@ Uses : mapping, VJing, interaction spectacteur/son/environement-visuels
 ## Inputs and outputs
 
 Inputs :
-- dound
-- MIDI controler
+- sound
+- MIDI controller
 - OSC (from Augmenta, Arduino)
 - etc
 
@@ -81,6 +81,14 @@ Outputs :
 
 # Understanding TouchDesigner
 
+## Interface
+
+Network in the middle, palette on the left (you can close it), parameters on the right.
+
+<img src="images/screen2.png"/>
+
+On top, differents little parameters of TD, layout etc, on the bottom, the timeline.
+
 ## Nodes
 
 6 categories of nodes :
@@ -95,3 +103,73 @@ Each categories have a color, and you cannot connect nodes from different catego
 
 Each node can be customized with a multitude of parameters particular to each, and allow the link of parameters between differents nodes, and to get data from any part of the TD project.
 
+<!--## Interactions-->
+
+# Basic actions
+
+## Feedback loop
+
+The basic feedback loop network : one texture TOP, going to a `Feedback TOP`, going to a modifier TOP (level, blur, etc), going to `Composite TOP` with the texture TOP.
+
+<img src="images/screen1.png"/>
+
+In the parameters of the `Feedback TOP`, we drag and drop the `Composite TOP` in the Target TOP slot, to have the grey arrow link between the TOPs closing the loop.
+
+In the parameters of the `Level TOP`, in the Post tab, we set the opacity to a lower value like 0.9, to decrease the opacity of the layers as they go through the feedback loop.
+
+In the parameters of the `Composite TOP`, we chose a operation mode like Add, or Atop.
+
+My tutorial about [using the Feedback TOP](https://github.com/LucieMrc/TD_feedback_love).
+
+## Exports
+To export a .mov video : create a `Movie File Out` TOP at the very end of your network, chose a name and a place for the file in the file slot. To start a recording, activate the Record button in the parameters, and deactivite the Record button to stop the recording.
+
+To send the video on a media server, create a `Syphon/Spout Out` TOP at the very end of the network.
+
+## Audio-reactive
+
+Create an `Audio File in` CHOP, in the parameters you can active Mono to have one channel instead of a stereo sound.
+
+You can put your own sound or keep the example one from TD. 
+
+Link it to a `Math` CHOP, go to the tab Range, change the From Range, I put -0.7 and 0.7 because it's the range I see on my CHOP. 
+
+Then change the To Range, I put 0.2 and 0.3 because it looked best.
+
+Click on the little cross on the bottom left of the node to activate the active viewer.
+
+Create a `Circle TOP`, in the parameters Radius X and Y, drag and drop the chan1 from the `Math TOP`, and select CHOP Reference in the slot.
+
+![screen de TD](./images/screen3.png)
+
+![screen de TD](./images/screen4.png)
+
+## Geometry
+
+To create a basic 3D geometry network, you need 5 nodes.
+- a SOP of your choice
+- a `Geometry COMP`
+- a `Camera COMP`
+- a `Light COMP`
+- a `Render TOP`
+- a MAT of your choice
+
+![screen de TD](./images/screen5.png)
+
+You start by creating a SOP of your choice, here a `Sphere SOP`. 
+
+Create a `Geomtry COMP` by dragging directly the out link of the Sphere and hitting tab.
+
+The sphere should appear in the Geo. Create a `Camera COMP` and a `Light COMP`, then a `Render TOP`. Grey arrow links should appear between the three COMP and the render.
+
+Then create a MAT of your choice, here a `Phong MAT`, and drag it on the `Geometry COMP`, and select Parm: Material.
+
+# To go further
+
+- [Audioreactive visual in TD](https://github.com/LucieMrc/TD_audioreact_love)
+
+- [Using Kantan for video-mapping in TD](https://github.com/LucieMrc/TD_KantanMapper)
+
+- [Photogrammetry in TD](https://github.com/LucieMrc/Photogrammetrie)
+
+- [Using Augmenta with TD](https://github.com/LucieMrc/TD_Augmenta)
