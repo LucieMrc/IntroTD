@@ -25,11 +25,11 @@ Outputs :
 
 ## What I do
 
-<img src="images/Enregistrement de l’écran 2022-09-12 à 17.01.41.gif" width="488"/>
+<img src="images/Enregistrement de l’écran 2022-09-12 à 17.01.41.gif" width="400"/>
 
-<img src="images/Enregistrement de l’écran 2022-09-15 à 13.33.10.gif" width="488"/>
+<img src="images/Enregistrement de l’écran 2022-09-15 à 13.33.10.gif" width="400"/>
 
-<img src="images/Enregistrement de l’écran 2022-09-23 à 12.28.49.gif" width="488"/>
+<img src="images/Enregistrement de l’écran 2022-09-23 à 12.28.49.gif" width="400"/>
 
 [@lucie.mrc](https://www.instagram.com/luciemrc/)
 
@@ -37,31 +37,31 @@ Outputs :
 
 [Borischimp504](https://www.instagram.com/borischimp504/) - photogrammetry
 
-<img src="images/Borischimp504.gif" width="488"/>
+<img src="images/Borischimp504.gif" width="400"/>
 
 [B2bk](https://www.instagram.com/b2bk.fr/) - photogrammetry
 
-<img src="images/b2bk.gif" width="488"/>
+<img src="images/b2bk.gif" width="400"/>
 
 [Kaoru Tanaka](https://www.instagram.com/velvet_kaoru/) - generative visuals
 
-<img src="images/kaoru.gif" width="488"/>
+<img src="images/kaoru.gif" width="400"/>
 
 [Roelof Knol](https://www.instagram.com/roelofknol/) - interactive installations
 
-<img src="images/roefnol.gif" width="488"/>
+<img src="images/roefnol.gif" width="400"/>
 
 [No One's Image](https://www.instagram.com/noonesimg/) - generative visuals
 
-<img src="images/noonesimg.gif" width="488"/>
+<img src="images/noonesimg.gif" width="400"/>
 
 [Karlskene](https://www.instagram.com/karlskene/) - generative visuals with laser and projection
 
-<img src="images/karlskene.gif" width="488"/>
+<img src="images/karlskene.gif" width="400"/>
 
 [Simon Alexander-Adams](https://www.instagram.com/polyhop/) - generative visuals
 
-<img src="images/simonaa.gif" width="488"/>
+<img src="images/simonaa.gif" width="400"/>
 
 
 ## People doing youtube tutorials
