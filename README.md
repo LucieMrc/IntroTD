@@ -103,9 +103,33 @@ Each categories have a color, and you cannot connect nodes from different catego
 
 Each node can be customized with a multitude of parameters particular to each, and allow the link of parameters between differents nodes, and to get data from any part of the TD project.
 
-<!--## Interactions-->
+## Data links
+
+To connect nodes, you can either do a regular link from one node's output to another node's input, if they are the same type of node (same color).
+
+To get a node to look at another node, whether they are the same type (in a `Feedback` TOP for example) or different types (`CHOP to`, `SOP to`, etc), you just need to drag and drop the observed node on the observing node.
+You can also drag and drop the observed node (here : `Audio Oscillator` CHOP) in the slot in the parameters of the observing node (here : `CHOP to` TOP), or write its name.
+
+![screen de TD](./images/screen7.png)
+
+To get some datas from a node (most of the time, CHOPs) into the parameters of another node, you need to first click on the little + at the bottom right of the node, to activate the "Viewer Active" mode. 
+
+The look of the node should change, and you can then drag and drop the channel name into a slot in the parameters of another node. Here the chan1 of an `Audio Oscillator` CHOP, into the period of a  `Noise` TOP. A list of export options appears, you should select "CHOP Reference" as the export to keep it in real time.
+
+You can also write "op('NameOfTheNode')['NameOfTheChannel']" in the parameter.
+
+![screen de TD](./images/screen8.png)
+
 
 # Basic actions
+
+## Basic `Noise` TOP animation
+
+To animate a `Noise` TOP, you can write "absTime.seconds" in the Translate parameters of the Transform tab in the parameters.
+
+You can make it scroll horizontally in translate X, scroll vertically in the translate Y, and the best results are often with translate Z (when the noise type is 3D or 4D).
+
+![screen de TD](./images/screen9.png)
 
 ## Feedback loop
 
@@ -123,6 +147,8 @@ My tutorial about [using the Feedback TOP](https://github.com/LucieMrc/TD_feedba
 
 ## Exports
 To export a .mov video : create a `Movie File Out` TOP at the very end of your network, chose a name and a place for the file in the file slot. To start a recording, activate the Record button in the parameters, and deactivite the Record button to stop the recording.
+
+You can and should uncheck "Realtime" in the middle of the top menu, so your video doesn't skip frames if TD start lagging. 
 
 To send the video on a media server, create a `Syphon/Spout Out` TOP at the very end of the network.
 
@@ -163,6 +189,38 @@ Create a `Geomtry COMP` by dragging directly the out link of the Sphere and hitt
 The sphere should appear in the Geo. Create a `Camera COMP` and a `Light COMP`, then a `Render TOP`. Grey arrow links should appear between the three COMP and the render.
 
 Then create a MAT of your choice, here a `Phong MAT`, and drag it on the `Geometry COMP`, and select Parm: Material.
+
+### Apply a 2D texture as a 3D material
+
+With the `Phong` MAT, you use any TOP as a texture for the material by dragging and dropping the TOP on the "Color Map" parameters of the `Phong`.
+
+## Move a circle with the mouse
+
+Create a `Mouse In` CHOP.
+
+Create a `Circle` TOP, set the radius to something smaller like 0.05, and the resolution to something bigger like 1280*720.
+
+Connect it to a `Transform` TOP.
+
+In the `Transform` TOP parameters, drag and drop "tx" from the `Mouse In` CHOP in the Translate X parameter, and do the same for "ty".
+
+![screen de TD](./images/screen6.png)
+
+If the circle isn't matching exactly the position of the cursor, we can remap the position so it matches the resolution of the image.
+
+Add two `Select` CHOP after the `Mouse In`, and choose tx and ty in "Channel Names" in each `Select`, to have a CHOP for each channel.
+
+Add a `Math` CHOP after each `Select` and go to the "Range" tab of the parameters.
+
+Most of the time, the position tx of the mouse will go from -1 (left side of the screen) to 1 (right side), and ty will go from around -0.6 (bottom of the screen) to 0.6 (top of the screen). You want to "From Range" to be these values in each `Math` CHOP.
+
+You can then arrange the "To Range" value by moving your mouse to the edges of the display of the `Transform` TOP, and setting the range to a value where the circle is under your cursor around the edges and in the middle of the display (unclear).
+I used -0.6, 0.6 for tx and -0.7, 0.7 for ty.
+
+
+![screen de TD](./images/screen10.png)
+
+The Range tab in a `Math` CHOP works by giving the current minimum and maximum of a value, and the new minimum and maximum that you chose, so the value is recalculated proportionally.
 
 # To go further
 
