@@ -33,6 +33,24 @@ Outputs :
 
 [@lucie.mrc](https://www.instagram.com/luciemrc/)
 
+## Interactive stuffs from the digital workshop
+
+<img src="images/mur_augmenta.gif" width="400"/>
+
+*Augmenta laser wall interactive visual*
+
+<img src="images/sol_augmenta.gif" width="400"/>
+
+*Augmenta 3D camera calibration*
+
+<img src="images/pixelmapping1.gif" width="400"/>
+
+*Pixel mapping with 9 leds bars*
+
+<img src="images/pixelmapping2.gif" width="400"/>
+
+*Pixel mapping with a MIDI controler*
+
 ## People doing things
 
 [Borischimp504](https://www.instagram.com/borischimp504/) - photogrammetry
