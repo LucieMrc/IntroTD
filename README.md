@@ -78,6 +78,7 @@ Outputs :
 
 [Pakita12](https://www.youtube.com/@paketa12)
 
+[Grady Sain](https://vimeo.com/user1133243)
 
 # Understanding TouchDesigner
 
@@ -224,10 +225,10 @@ The Range tab in a `Math` CHOP works by giving the current minimum and maximum o
 
 # To go further
 
-- [Audioreactive visual in TD](https://github.com/LucieMrc/TD_audioreact_love)
+- [Audioreactive visual in TD (EN)](https://github.com/LucieMrc/TD_audioreact_love_EN)
 
-- [Using Kantan for video-mapping in TD](https://github.com/LucieMrc/TD_KantanMapper)
+- [Using Kantan for video-mapping in TD (EN)](https://github.com/LucieMrc/TD_KantanMapper)
 
-- [Photogrammetry in TD](https://github.com/LucieMrc/Photogrammetrie)
+- [Photogrammetry in TD (FR for now)](https://github.com/LucieMrc/Photogrammetrie)
 
-- [Using Augmenta with TD](https://github.com/LucieMrc/TD_Augmenta)
+- [Using Augmenta with TD (EN)](https://github.com/LucieMrc/TD_Augmenta)
