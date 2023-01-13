@@ -162,7 +162,7 @@ In the parameters of the `Level TOP`, in the Post tab, we set the opacity to a l
 
 In the parameters of the `Composite TOP`, we chose a operation mode like Add, or Atop.
 
-My tutorial about [using the Feedback TOP](https://github.com/LucieMrc/TD_feedback_love).
+My tutorial about [using the Feedback TOP](https://github.com/LucieMrc/TD_feedback_love_EN).
 
 ## Exports
 To export a .mov video : create a `Movie File Out` TOP at the very end of your network, chose a name and a place for the file in the file slot. To start a recording, activate the Record button in the parameters, and deactivite the Record button to stop the recording.
