@@ -92,6 +92,8 @@ Outputs :
 
 [The Interactive & Immersive HQ](https://www.youtube.com/channel/UC-9DT8kpvykuBEQ2iVatWbA)
 
+[Acrylicode](https://www.youtube.com/@acrylicode)
+
 [Matthew Ragan](https://www.youtube.com/@raganmd)
 
 [Pakita12](https://www.youtube.com/@paketa12)
@@ -244,6 +246,8 @@ The Range tab in a `Math` CHOP works by giving the current minimum and maximum o
 # To go further
 
 - [Audioreactive visual in TD (EN)](https://github.com/LucieMrc/TD_audioreact_love_EN)
+
+- [Feedback loop in TD (EN)](https://github.com/LucieMrc/TD_feedback_love_EN)
 
 - [Using Kantan for video-mapping in TD (EN)](https://github.com/LucieMrc/TD_KantanMapper)
 
