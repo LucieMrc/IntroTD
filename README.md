@@ -13,6 +13,7 @@
     * [Interface](#Interface)<br>
     * [Nodes](#nodes)<br>
     * [Data links](#data-links)<br>
+    * [Quick help!](#quick-help)<br>
 
 * [Basic actions](#basic-actions)<br>
     * [Basic `Noise` TOP animation](#basic-noise-top-animation)<br>
@@ -111,17 +112,17 @@ Outputs :
 
 [Bileam Tschepe](https://www.youtube.com/channel/UCONptu0J1PCrW9YfBtSdqjA)
 
-[PPPANIK](https://www.youtube.com/channel/UCWBbakpo_cATqJy9Dzf9x4w)
-
-[Noto the Talking Ball](https://www.youtube.com/@NotoTheTalkingBall)
-
 [The Interactive & Immersive HQ](https://www.youtube.com/channel/UC-9DT8kpvykuBEQ2iVatWbA)
 
 [Acrylicode](https://www.youtube.com/@acrylicode)
 
+[Noto the Talking Ball](https://www.youtube.com/@NotoTheTalkingBall)
+
 [Matthew Ragan](https://www.youtube.com/@raganmd)
 
 [Pakita12](https://www.youtube.com/@paketa12)
+
+[PPPANIK](https://www.youtube.com/channel/UCWBbakpo_cATqJy9Dzf9x4w)
 
 [Grady Sain](https://vimeo.com/user1133243)
 
@@ -166,6 +167,17 @@ You can also write "op('NameOfTheNode')['NameOfTheChannel']" in the parameter.
 
 ![screen de TD](./images/screen8.png)
 
+## Quick help!
+
+![screen de TD](./images/screen11.png)
+
+To find help quickly about an operator that you don't know or don't understand, you can right-click on the operator and click `Operator Snippets` to open a Touchdesigner page with one or multiple examples of how to use the operator :
+
+![screen de TD](./images/screen13.png)
+
+You can also click `Help` to open the Touchdesigner documentation page about the operator :
+
+![screen de TD](./images/screen12.png)
 
 # Basic actions
 
@@ -260,7 +272,7 @@ Add a `Math` CHOP after each `Select` and go to the "Range" tab of the parameter
 
 Most of the time, the position tx of the mouse will go from -1 (left side of the screen) to 1 (right side), and ty will go from around -0.6 (bottom of the screen) to 0.6 (top of the screen). You want to "From Range" to be these values in each `Math` CHOP.
 
-You can then arrange the "To Range" value by moving your mouse to the edges of the display of the `Transform` TOP, and setting the range to a value where the circle is under your cursor around the edges and in the middle of the display (unclear).
+You can then arrange the "To Range" value by moving your mouse to the edges of the display of the `Transform` TOP, and setting the range to a value where the circle center position match your cursor position around the edges and in the middle of the display.
 I used -0.6, 0.6 for tx and -0.7, 0.7 for ty.
 
 
