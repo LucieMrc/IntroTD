@@ -291,3 +291,5 @@ The Range tab in a `Math` CHOP works by giving the current minimum and maximum o
 - [Photogrammetry in TD (FR for now)](https://github.com/LucieMrc/Photogrammetrie)
 
 - [Using Augmenta with TD (EN)](https://github.com/LucieMrc/TD_Augmenta)
+
+- [Touchdesigner ressources from the MIR lab](https://mir.works/learning-resources) (advanced)
