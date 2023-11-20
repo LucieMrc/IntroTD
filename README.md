@@ -1,4 +1,6 @@
-# Intro_TD
+# Touchdesigner intro
+
+[*french version*](https://github.com/LucieMrc/IntroTD_FR)
 
 ## Content
 * [TouchDesigner ???](#touchdesigner-)<br>
@@ -34,19 +36,19 @@ Touchdesigner allow 2D and 3D production, including rendering and composing tool
 
 Programming in TD is based on the connexion between different nodes, which all have parameters controling their operations.
 
-Uses : mapping, VJing, interaction spectacteur/son/environement-visuels
+Uses : mapping, VJing, spectator/environment/sound-visual interaction
 
 ## Inputs and outputs
 
 Inputs :
 - sound
 - MIDI controller
-- OSC (from Augmenta, Arduino)
+- datas : OSC, Serial (from Arduino, ...)
 - etc
 
 Outputs :
 - real-time video (video-mapping, led-mapping, ...)
-- datas
+- datas : OSC, Serial (from Arduino, ...)
 - etc
 
 ## What I do
@@ -138,6 +140,8 @@ On top, differents little parameters of TD, layout etc, on the bottom, the timel
 
 ## Nodes
 
+To open the nodes menu, you can either double-click on the background or press tab on your keyboard.
+
 6 categories of nodes :
 - COMP (Components), representing different types of controls and various nodes.
 - TOP (Texture Operators), allowing operations on 2D images.
@@ -146,20 +150,63 @@ On top, differents little parameters of TD, layout etc, on the bottom, the timel
 - MAT (Materials), used to apply materials and shaders on 3D renders.
 - DAT (Data Operators), used for texts, scripts and data arrays.
 
+<details>
+ <summary> Les nodes les + utilisées </summary>
+
+### COMP : 
+- `Geo` + `Camera` + `Light` pour créer un rendu 3D.
+
+### TOP : 
+- `Noise` : du random en image 2D, facile à animer
+- `Composite` :  mélanger plusieurs images avec différents types d'opérations
+- `Level` : modifier la luminosité, le contraste, l'opacité, etc d'une image
+- `Lookup` + `Ramp` : récoloriser une image suivant un dégradé de couleurs données
+- `Movie File In` : charger une image ou une vidéo dans TD
+- `Render` : rendre un objet ou une scène 3D dans une image 2D
+- `Transform` : modifier la taille d'une image, sa position, son orientation, ajouter un fond derrière les pixels transparents
+- `Movie File Out` : exporter une vidéo
+
+### CHOP : 
+- `Audio File In` : charger un son dans TD
+- `Constant` : créer des données constantes à utiliser dans le projet
+- `Filter` : lisser un flux de données pour éviter les sauts trop hauts ou trop bas dans la courbe
+- `Limit` : contraindre un flux de données entre un maximum et un minimum selon différentes opérations
+- `Math` : appliquer des opérations mathématiques sur des données
+- `Mouse In` : récuperer les positions X et Y de la souris
+- `Keyboard In` : récuperer les évenements clavier
+
+### SOP : 
+- `Grid` : créer une grille 3D
+- `Sphere` : créer une sphère
+- `Twist` : plier ou twister un objet 3D selon différentes opérations
+- `Text` : créer un objet texte en 3D
+- `Transform` : modifier la taille, la position et la rotation d'un objet 3D
+
+### MAT : 
+- `Constant` : un matériau d'une couleur constante
+- `Line` ou `Wireframe` : un matériau avec juste le contour des polygones
+- `Phong` : un matériau avec une color map, une normal map, etc
+
+</details>
+
 Each categories have a color, and you cannot connect nodes from different categories. To connect a CHOP to a TOP in your network for example, you can either use a CHOPToTop node or link the parameter you want in the CHOP to a parameter in the TOP. The link will then be a dotted line instead of a full line.
 
 Each node can be customized with a multitude of parameters particular to each, and allow the link of parameters between differents nodes, and to get data from any part of the TD project.
+
+To open the parameters, press 'p'.
 
 ## Data links
 
 To connect nodes, you can either do a regular link from one node's output to another node's input, if they are the same type of node (same color).
 
-To get a node to look at another node, whether they are the same type (in a `Feedback` TOP for example) or different types (`CHOP to`, `SOP to`, etc), you just need to drag and drop the observed node on the observing node.
+To get a node to "look at" another node, whether they are the same type (in a `Feedback` TOP for example) or different types (`CHOP to`, `SOP to`, etc), you just need to drag and drop the observed node on the observing node.
 You can also drag and drop the observed node (here : `Audio Oscillator` CHOP) in the slot in the parameters of the observing node (here : `CHOP to` TOP), or write its name.
 
 ![screen de TD](./images/screen7.png)
 
 To get some datas from a node (most of the time, CHOPs) into the parameters of another node, you need to first click on the little + at the bottom right of the node, to activate the "Viewer Active" mode. 
+
+![screen de TD](./images/screen14.png)
 
 The look of the node should change, and you can then drag and drop the channel name into a slot in the parameters of another node. Here the chan1 of an `Audio Oscillator` CHOP, into the period of a  `Noise` TOP. A list of export options appears, you should select "CHOP Reference" as the export to keep it in real time.
 
@@ -171,11 +218,11 @@ You can also write "op('NameOfTheNode')['NameOfTheChannel']" in the parameter.
 
 ![screen de TD](./images/screen11.png)
 
-To find help quickly about an operator that you don't know or don't understand, you can right-click on the operator and click `Operator Snippets` to open a Touchdesigner page with one or multiple examples of how to use the operator :
+To find help quickly about a node that you don't know or don't understand, you can right-click on the node and click `Operator Snippets` to open a Touchdesigner page with one or multiple examples of how to use the node :
 
 ![screen de TD](./images/screen13.png)
 
-You can also click `Help` to open the Touchdesigner documentation page about the operator :
+You can also click `Help` to open the Touchdesigner documentation page about the node :
 
 ![screen de TD](./images/screen12.png)
 
@@ -206,6 +253,8 @@ My tutorial about [using the Feedback TOP](https://github.com/LucieMrc/TD_feedba
 ## Exports
 To export a .mov video : create a `Movie File Out` TOP at the very end of your network, chose a name and a place for the file in the file slot. To start a recording, activate the Record button in the parameters, and deactivite the Record button to stop the recording.
 
+<img src="images/screen15.png"/>
+
 You can and should uncheck "Realtime" in the middle of the top menu, so your video doesn't skip frames if TD start lagging. 
 
 To send the video on a media server, create a `Syphon/Spout Out` TOP at the very end of the network.
@@ -220,7 +269,9 @@ Link it to a `Math` CHOP, go to the tab Range, change the From Range, I put -0.7
 
 Then change the To Range, I put 0.2 and 0.3 because it looked best.
 
-Click on the little cross on the bottom left of the node to activate the active viewer.
+![screen de TD](./images/screen16.png)
+
+Click on the little cross on the bottom right of the node to activate the active viewer.
 
 Create a `Circle TOP`, in the parameters Radius X and Y, drag and drop the chan1 from the `Math TOP`, and select CHOP Reference in the slot.
 
@@ -228,7 +279,7 @@ Create a `Circle TOP`, in the parameters Radius X and Y, drag and drop the chan1
 
 ![screen de TD](./images/screen4.png)
 
-## Geometry
+## 3D render
 
 To create a basic 3D geometry network, you need 5 nodes.
 - a SOP of your choice
