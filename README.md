@@ -5,7 +5,6 @@
 ## Content
 * [TouchDesigner ???](#touchdesigner-)<br>
     * [Inputs and outputs](#Inputs-and-outputs)<br>
-    * [What I do](#What-I-do)<br>
     * [Interactive stuffs from the digital workshop](#interactive-stuffs-from-the-digital-workshop)<br>
     * [People doing things](#people-doing-things)<br>
     * [Interactive stuffs from the digital workshop](#interactive-stuffs-from-the-digital-workshop)<br>
@@ -51,7 +50,7 @@ Outputs :
 - datas : OSC, Serial (from Arduino, ...)
 - etc
 
-## What I do
+<!-- ## What I do
 
 <img src="images/Enregistrement de l’écran 2022-09-12 à 17.01.41.gif" width="400"/>
 
@@ -59,7 +58,7 @@ Outputs :
 
 <img src="images/Enregistrement de l’écran 2022-09-23 à 12.28.49.gif" width="400"/>
 
-[@lucie.mrc](https://www.instagram.com/luciemrc/)
+[@lucie.mrc](https://www.instagram.com/luciemrc/) -->
 
 ## Interactive stuffs from the digital workshop
 
