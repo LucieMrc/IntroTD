@@ -125,6 +125,9 @@ Outputs :
 
 [PPPANIK](https://www.youtube.com/channel/UCWBbakpo_cATqJy9Dzf9x4w)
 
+[Noones img](https://www.youtube.com/@noonesimg/videos
+)
+
 [Grady Sain](https://vimeo.com/user1133243)
 
 # Understanding TouchDesigner
@@ -153,38 +156,38 @@ To open the nodes menu, you can either double-click on the background or press t
  <summary> Les nodes les + utilisées </summary>
 
 ### COMP : 
-- `Geo` + `Camera` + `Light` pour créer un rendu 3D.
+- `Geo` + `Camera` + `Light` to create a 3D render.
 
 ### TOP : 
-- `Noise` : du random en image 2D, facile à animer
-- `Composite` :  mélanger plusieurs images avec différents types d'opérations
-- `Level` : modifier la luminosité, le contraste, l'opacité, etc d'une image
-- `Lookup` + `Ramp` : récoloriser une image suivant un dégradé de couleurs données
-- `Movie File In` : charger une image ou une vidéo dans TD
-- `Render` : rendre un objet ou une scène 3D dans une image 2D
-- `Transform` : modifier la taille d'une image, sa position, son orientation, ajouter un fond derrière les pixels transparents
-- `Movie File Out` : exporter une vidéo
+- `Noise` : random as a 2D image, easy to animate
+- `Composite` :  blend multiple images with different operation types
+- `Level` : change the brightness, contrast, opacity, ..., of an image
+- `Lookup` + `Ramp` : recolorize an image with the color of the gradient in the Ramp
+- `Movie File In` : import an image or a video
+- `Render` : render a 3D object or scene into a 2D image
+- `Transform` : change the size, position, orientation, of an image, add a background behind transparent pixels
+- `Movie File Out` : export an image or video
 
 ### CHOP : 
-- `Audio File In` : charger un son dans TD
-- `Constant` : créer des données constantes à utiliser dans le projet
-- `Filter` : lisser un flux de données pour éviter les sauts trop hauts ou trop bas dans la courbe
-- `Limit` : contraindre un flux de données entre un maximum et un minimum selon différentes opérations
-- `Math` : appliquer des opérations mathématiques sur des données
-- `Mouse In` : récuperer les positions X et Y de la souris
-- `Keyboard In` : récuperer les évenements clavier
+- `Audio File In` : import an audio file
+- `Constant` : create constant datas to use in the project
+- `Filter` : smooth a data stream to avoid a too noisy input
+- `Limit` : constrain a data stream between a maximum and a minimum with different operations
+- `Math` : apply math operations on data
+- `Mouse In` : get the X and Y position of the mouse cursor
+- `Keyboard In` : get keyboard events
 
 ### SOP : 
-- `Grid` : créer une grille 3D
-- `Sphere` : créer une sphère
-- `Twist` : plier ou twister un objet 3D selon différentes opérations
-- `Text` : créer un objet texte en 3D
-- `Transform` : modifier la taille, la position et la rotation d'un objet 3D
+- `Grid` : create a 3D grid
+- `Sphere` : create a sphere
+- `Twist` : bend ou twist 3D objects with different operations
+- `Text` : create a 3D text object
+- `Transform` : change the size, position, rotation, ..., of a 3D object
 
 ### MAT : 
-- `Constant` : un matériau d'une couleur constante
-- `Line` ou `Wireframe` : un matériau avec juste le contour des polygones
-- `Phong` : un matériau avec une color map, une normal map, etc
+- `Constant` : a material with a full constant color
+- `Line` ou `Wireframe` : a material with just the polygons outline
+- `Phong` : a material with a color map, a normal map, ...
 
 </details>
 
