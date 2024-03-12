@@ -335,14 +335,16 @@ The Range tab in a `Math` CHOP works by giving the current minimum and maximum o
 
 # To go further
 
-- [Audioreactive visual in TD (EN)](https://github.com/LucieMrc/TD_audioreact_love_EN)
+- [MediaPipe for TD (EN)](https://github.com/LucieMrc/MediaPipe_TD_EN) : use the face tracking, hand tracking and skeleton tracking to create interaction with a webcam (like with a Kinect).
 
-- [Feedback loop in TD (EN)](https://github.com/LucieMrc/TD_feedback_love_EN)
+- [Audioreactive visual in TD (EN)](https://github.com/LucieMrc/TD_audioreact_love_EN) : create visuals based on the audio spectrum of a sound.
 
-- [Using Kantan for video-mapping in TD (EN)](https://github.com/LucieMrc/TD_KantanMapper)
+- [Feedback loop in TD (EN)](https://github.com/LucieMrc/TD_feedback_love_EN) : understand and use the feedback loop.
 
-- [Photogrammetry in TD (FR for now)](https://github.com/LucieMrc/Photogrammetrie)
+- [Text effects in TD (EN)](https://github.com/LucieMrc/TD_textEffects) : different text animations.
 
-- [Using Augmenta with TD (EN)](https://github.com/LucieMrc/TD_Augmenta)
+- [Using Kantan for video-mapping in TD (EN)](https://github.com/LucieMrc/TD_KantanMapper) : use TD to do video-mapping (does not work very well).
 
-- [Touchdesigner ressources from the MIR lab](https://mir.works/learning-resources) (advanced)
+- [Using Augmenta with TD (EN)](https://github.com/LucieMrc/TD_Augmenta) : use Augmenta to create interactive projections (old method).
+
+- [Touchdesigner ressources from the MIR lab](https://mir.works/learning-resources) (advanced).
