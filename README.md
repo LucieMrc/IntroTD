@@ -341,6 +341,8 @@ The Range tab in a `Math` CHOP works by giving the current minimum and maximum o
 
 - [Feedback loop in TD (EN)](https://github.com/LucieMrc/TD_feedback_love_EN) : understand and use the feedback loop.
 
+-[TD <-> Arduino](https://github.com/LucieMrc/TD_Arduino_EN): communicate via Serial between Touchdesigner and Arduino.
+
 - [Text effects in TD (EN)](https://github.com/LucieMrc/TD_textEffects) : different text animations.
 
 - [Using Kantan for video-mapping in TD (EN)](https://github.com/LucieMrc/TD_KantanMapper) : use TD to do video-mapping (does not work very well).
