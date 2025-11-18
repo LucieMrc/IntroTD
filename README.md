@@ -335,13 +335,17 @@ The Range tab in a `Math` CHOP works by giving the current minimum and maximum o
 
 # To go further
 
+- Texture tool: [Dither anything](https://github.com/LucieMrc/Dither_touchdesigner)
+
 - [MediaPipe for TD (EN)](https://github.com/LucieMrc/MediaPipe_TD_EN) : use the face tracking, hand tracking and skeleton tracking to create interaction with a webcam (like with a Kinect).
 
 - [Audioreactive visual in TD (EN)](https://github.com/LucieMrc/TD_audioreact_love_EN) : create visuals based on the audio spectrum of a sound.
 
 - [Feedback loop in TD (EN)](https://github.com/LucieMrc/TD_feedback_love_EN) : understand and use the feedback loop.
 
--[TD <-> Arduino](https://github.com/LucieMrc/TD_Arduino_EN): communicate via Serial between Touchdesigner and Arduino.
+- [Using the Replicator COMP](https://github.com/LucieMrc/TD_Replicator_EN) : using the Replicator COMP to clone components with a data DAT.
+
+- [TD <-> Arduino](https://github.com/LucieMrc/TD_Arduino_EN): communicate via Serial between Touchdesigner and Arduino.
 
 - [Text effects in TD (EN)](https://github.com/LucieMrc/TD_textEffects) : different text animations.
 
